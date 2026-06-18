@@ -1,0 +1,15 @@
+appId: com.qazandoqafood
+---
+- launchApp
+
+- runFlow:
+    file: ../subflows/login.yaml
+    env:
+      EMAIL: teste@teste.com
+      PASSWORD: "123456"
+
+- runFlow: ../subflows/selecionar_restaurante.yaml
+
+- runFlow: ../subflows/adicionar_ao_carrinho.yaml
+
+- runFlow: ../subflows/finalizar_pedido.yaml

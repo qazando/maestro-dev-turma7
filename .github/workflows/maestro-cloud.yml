@@ -2,15 +2,10 @@ name: Maestro Cloud Tests
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   pull_request:
-    branches: [main]
+    branches: [master]
   workflow_dispatch:
-    inputs:
-      apk-url:
-        description: "URL do APK para download (sobrescreve o padrão)"
-        required: false
-        type: string
 
 jobs:
   maestro-cloud:
@@ -20,19 +15,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Download APK
-        run: |
-          APK_URL="${{ github.event.inputs.apk-url || vars.APK_URL }}"
-          if [ -z "$APK_URL" ]; then
-            echo "Erro: defina APK_URL nas variáveis do repositório ou passe via workflow_dispatch."
-            exit 1
-          fi
-          curl -L "$APK_URL" -o app.apk
-
       - name: Run tests on Maestro Cloud
         uses: mobile-dev-inc/action-maestro-cloud@v2.0.2
         with:
-          api-key: rb_DZSyfETFs4tyN9CLMVD66GaPUuoRWsNYPU9Ag8rJhouQjIENLRLugfa3s2jbaAMM6S2IuGrjKTDxwa73fNpxqvLSByapYheVLlm
-          project-id: proj_01kve8kx8veyxtkn7dxymgh3bv
-          app-file: app.apk
-          workspace: .
+          api-key: ${{ secrets.MAESTRO_API_KEY }}
+          project-id: ${{ secrets.MAESTRO_PROJECT_ID }}
+          app-file: qazandofood.apk
+          workspace: flows
