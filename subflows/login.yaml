@@ -1,9 +1,0 @@
-appId: com.qazandoqafood
----
-- tapOn: E-mail
-- inputText: ${EMAIL}
-- tapOn: Senha
-- inputText: ${PASSWORD}
-- hideKeyboard
-- tapOn: login-button
-- assertVisible: Pastelaria da Maria

@@ -22,3 +22,4 @@ jobs:
           project-id: ${{ secrets.MAESTRO_PROJECT_ID }}
           app-file: qazandofood.apk
           workspace: flows
+          include-tags: smoke

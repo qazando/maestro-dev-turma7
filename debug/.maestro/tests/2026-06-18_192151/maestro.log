@@ -1,0 +1,48 @@
+19:21:51.403 [ INFO] MAESTRO.logSystemInfo: ---- System Info ----
+19:21:51.407 [ INFO] MAESTRO.logSystemInfo: Maestro Version: 1.39.9
+19:21:51.407 [ INFO] MAESTRO.logSystemInfo: CI: Undefined
+19:21:51.407 [ INFO] MAESTRO.logSystemInfo: OS Name: Windows 11
+19:21:51.407 [ INFO] MAESTRO.logSystemInfo: OS Version: 10.0
+19:21:51.409 [ INFO] MAESTRO.logSystemInfo: Architecture: amd64
+19:21:51.409 [ INFO] MAESTRO.logSystemInfo: Java Version: 11
+19:21:51.411 [ INFO] MAESTRO.logSystemInfo: Xcode Version: null
+19:21:51.415 [ INFO] MAESTRO.logSystemInfo: Flutter Version: Undefined
+19:21:51.419 [ INFO] MAESTRO.logSystemInfo: Flutter Channel: Undefined
+19:21:51.419 [ INFO] MAESTRO.logSystemInfo: ---------------------
+19:21:51.957 [ INFO] maestro.cli.command.TestCommand.runShardSuite: [shard 1] Selected device 13028ecc using port 7001
+19:22:25.926 [ INFO] maestro.Maestro.invoke: Getting device info
+19:22:26.427 [ INFO] maestro.Maestro.invoke: Got device info: DeviceInfo(platform=ANDROID, widthPixels=1080, heightPixels=2340, widthGrid=1080, heightGrid=2340)
+19:22:26.548 [ INFO] maestro.cli.runner.MaestroCommandRunner.invoke: Define variables RUNNING
+19:22:26.552 [ INFO] maestro.cli.runner.MaestroCommandRunner.invoke: Define variables metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(defineVariablesCommand=DefineVariablesCommand(env={MAESTRO_FILENAME=jornada_pedido_completo}, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE))
+19:22:26.554 [ INFO] maestro.cli.runner.MaestroCommandRunner.invoke: Define variables COMPLETED
+19:22:26.555 [ INFO] maestro.cli.runner.MaestroCommandRunner.invoke: Apply configuration RUNNING
+19:22:26.556 [ INFO] maestro.cli.runner.MaestroCommandRunner.invoke: Apply configuration metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(applyConfigurationCommand=ApplyConfigurationCommand(config=MaestroConfig(appId=com.qazandoqafood, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null), label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE))
+19:22:26.557 [ INFO] maestro.cli.runner.MaestroCommandRunner.invoke: Apply configuration COMPLETED
+19:22:26.558 [ INFO] maestro.cli.runner.MaestroCommandRunner.invoke: Launch app "com.qazandoqafood" RUNNING
+19:22:26.559 [ INFO] maestro.cli.runner.MaestroCommandRunner.invoke: Launch app "com.qazandoqafood" metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(launchAppCommand=LaunchAppCommand(appId=com.qazandoqafood, clearState=null, clearKeychain=null, stopApp=null, permissions=null, launchArguments=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE))
+19:22:27.497 [ INFO] maestro.Maestro.launchApp: Launching app com.qazandoqafood
+19:22:27.893 [ INFO] maestro.cli.runner.MaestroCommandRunner.invoke: Launch app "com.qazandoqafood" COMPLETED
+19:22:27.894 [ INFO] maestro.cli.runner.MaestroCommandRunner.invoke: Run ./subflows/login.yaml RUNNING
+19:22:27.895 [ INFO] maestro.cli.runner.MaestroCommandRunner.invoke: Run ./subflows/login.yaml metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(runFlowCommand=RunFlowCommand(commands=[MaestroCommand(defineVariablesCommand=DefineVariablesCommand(env={EMAIL=teste@teste.com, PASSWORD=123456}, label=null, optional=false)), MaestroCommand(applyConfigurationCommand=ApplyConfigurationCommand(config=MaestroConfig(appId=com.qazandoqafood, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null), label=null, optional=false)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=E-mail, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null), retryIfNoChange=true, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, label=null, optional=false)), MaestroCommand(inputTextCommand=InputTextCommand(text=${EMAIL}, label=null, optional=false)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=Senha, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null), retryIfNoChange=true, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, label=null, optional=false)), MaestroCommand(inputTextCommand=InputTextCommand(text=${PASSWORD}, label=null, optional=false)), MaestroCommand(hideKeyboardCommand=HideKeyboardCommand()), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=login-button, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null), retryIfNoChange=true, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, label=null, optional=false)), MaestroCommand(assertConditionCommand=AssertConditionCommand(condition=Condition(platform=null, visible=ElementSelector(textRegex=Pastelaria da Maria, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null), notVisible=null, scriptCondition=null, label=null), timeout=null, label=null, optional=false))], condition=null, sourceDescription=./subflows/login.yaml, config=MaestroConfig(appId=com.qazandoqafood, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null), label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE))
+19:22:27.896 [ INFO] maestro.cli.runner.MaestroCommandRunner.invoke: Define variables RUNNING
+19:22:27.899 [ INFO] maestro.cli.runner.MaestroCommandRunner.invoke: Define variables metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(defineVariablesCommand=DefineVariablesCommand(env={EMAIL=teste@teste.com, PASSWORD=123456}, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE))
+19:22:27.903 [ INFO] maestro.cli.runner.MaestroCommandRunner.invoke: Define variables COMPLETED
+19:22:27.905 [ INFO] maestro.cli.runner.MaestroCommandRunner.invoke: Apply configuration RUNNING
+19:22:27.906 [ INFO] maestro.cli.runner.MaestroCommandRunner.invoke: Apply configuration metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(applyConfigurationCommand=ApplyConfigurationCommand(config=MaestroConfig(appId=com.qazandoqafood, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null), label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE))
+19:22:27.908 [ INFO] maestro.cli.runner.MaestroCommandRunner.invoke: Apply configuration COMPLETED
+19:22:27.909 [ INFO] maestro.cli.runner.MaestroCommandRunner.invoke: Tap on "E-mail" RUNNING
+19:22:27.911 [ INFO] maestro.cli.runner.MaestroCommandRunner.invoke: Tap on "E-mail" metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=E-mail, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null), retryIfNoChange=true, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE))
+19:22:46.463 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+19:22:46.465 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+19:22:47.431 [ INFO] maestro.cli.runner.MaestroCommandRunner.invoke: Tap on "E-mail" FAILED
+19:22:47.434 [ INFO] maestro.cli.runner.MaestroCommandRunner.invoke: Run ./subflows/login.yaml FAILED
+19:22:47.784 [ERROR] maestro.cli.session.MaestroSessionManager.newSession$lambda$0: Failed to record heartbeat
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at maestro.cli.session.MaestroSessionManager.newSession$lambda$0(MaestroSessionManager.kt:75)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
