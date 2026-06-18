@@ -1,0 +1,23 @@
+appId: com.qazandoqafood
+---
+- launchApp
+- tapOn: E-mail
+- inputText: teste@teste.com
+- tapOn: Senha
+- inputText: 123456
+- hideKeyboard
+- tapOn: login-button
+- assertVisible: Pastelaria da Maria
+- tapOn: Selecione seu endereço...
+- tapOn: PERMITIR
+- tapOn: Pastelaria da Maria
+- tapOn: add-item-buttom
+- tapOn: open-cart-button
+- tapOn: confirm-order-button
+- scroll
+- tapOn: Dinheiro
+- tapOn: do-order-button
+- assertVisible: Previsão de etrega
+- assertVisible:
+    text: Pedido realizado
+    label: "Verificar se o texto 'Pedido realizado' está sendo apresentado"
